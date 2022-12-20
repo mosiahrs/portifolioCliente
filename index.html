@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/mari.jpg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Marilande Ribeiro</title>
 </head>
@@ -15,16 +16,17 @@
 
     <main class="home">
         <figure>
-            <img class="main_logo" src="images/law4.png">
+            <a href="#clickME"><img class="main_logo" src="images/law4.png"></a>
         </figure>
         <div class="text_quemSou">
             <p class="introduction">Olá, eu sou</p>
             <h1> Marilande Ribeiro</h1>
-            <img src="images/double-line.svg" class="doubleLine">
+            <a href="https://www.linkedin.com/in/marilande-ribeiro-964b3a5/" target="_blank"><button class="quemSou">
+                    quem sou</button></a>
         </div>
     </main>
 
-    <section class="aboutMe">
+    <section class="aboutMe" id="clickME">
         <figure>
             <img src="images/mari.jpg" width="300">
             <h2 class="subtitle_photo"><span>M</span>arilande Ribeiro</h2>
@@ -47,7 +49,22 @@
     </div>
 
     <section class="blog">
-        <article class="blog_article left">
+        <article class="blog_article right">
+            <figure><img src="images/cod.jpg" alt="" width="350"></figure>
+            <div>
+                <h3>CÓDIGOS Vs CÓDIGOS</h3>
+                <p>
+                    Por que não integrar o jurídico ao mundo tech ou o tech ao mundo jurídico?
+                    Assim como temos uma estrutura da escrita de uma lei ou de um texto legal, temos também na linguagem
+                    de programação.
+
+                    Na 'Linguagem Jurídica' temos a construção de uma norma pela qual é disposta em artigos, podendo
+                    estes adotarem divisões como o caput (como a cabeça do artigo), os parágrafos, os incisos e as
+                    alíneas.
+                </p>
+            </div>
+        </article>
+        <article class="blog_article left" id="rebelde">
             <figure>
                 <img src="images/estr_art.jpg" alt="página com manuscritos" width="350">
             </figure>
@@ -85,7 +102,14 @@
                 <p>
                     Quanto à estrutura de uma Linguagem de Programação, esta pode ser muito mais
                     complexa, considerando sua construção <u>lógica</u>. <br> Mas o fato interessante é
-                    que se comparada à norma jurídica, na <u>programação</u>, nós mesmos, como ser individual...
+                    que se comparada à norma jurídica, na <u>programação</u>, nós mesmos, como ser individual podemos
+                    criar os códigos. <br><br>
+
+                    <strong>EIS A TRANSFORMAÇÃO!</strong> <br><br>
+
+                    A linguagem de programação é considerada também formal. Logo, com uma série de instruções, conjunto
+                    de ordens, ações consecutivas, dados e algoritmos, cria-se um programa que controla o comportamento
+                    (físico e lógico) de uma máquina, diferentemente da Lei que controla o humano.
                 </p>
             </div>
         </article>
@@ -101,6 +125,12 @@
                 </p>
             </div>
         </article>
+
+
+        <a href="https://www.instagram.com/marilanderibeirodemoraes/" target="_blank">
+            <button class="btn-acesseMais"> ACESSE MAIS ARTIGOS</button>
+        </a>
+
     </section>
 
     <div class="title_section">
@@ -108,7 +138,45 @@
         <img src="images/double-line.svg" class="doubleLine">
     </div>
 
-    <section class="certificados">
+    <section class="carousel">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./images/business.jpg" style="width:100%">
+                <div class="text">Business TechNow</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./images/starse.jpg" style="width:100%">
+                <div class="text">Fullstack Developer</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./images/lgpd.jpg" style="width:100%">
+                <div class="text">Privacidade e Proteção de Dados</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <!--
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
         <figure class="certificado">
             <img src="./images/business.jpg" width="300">
             <figcaption>Business TechNow</figcaption>
@@ -123,7 +191,9 @@
             <img src="./images/lgpd.jpg" width="300">
             <figcaption>Privacidade e Proteção de Dados</figcaption>
         </figure>
-    </section>
+
+        -->
+
 
 
     <footer>
@@ -152,7 +222,7 @@
 
         <p>&copy; 2022 - Desenvolvido por Marilande Ribeiro</p>
     </footer>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
