@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Página Inicial - Home */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(8, 8, 8, 0.795), rgba(27, 9, 1, 0.616) .100%), url(../images/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home h1 {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-left: 25px;
+}
+
+.main_logo {
+    width: 275px;
+}
+
+.quemSou {
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    color: rgb(193, 143, 89);
+    text-transform: uppercase;
+    margin-left: 25px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.quemSou:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+}
+
+/* Sobre Mim */
+
+.aboutMe {
+    width: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(8, 8, 8, 0.137), rgba(27, 9, 1, 0.164) .100%), url(../images/about-me-bckg.jpg);
+    background-size: cover;
+    padding-top: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutMe figure {
+    background-color: whitesmoke;
+    padding: 15px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.aboutMe figure img {
+    border-radius: 8px;
+}
+
+.subtitle_photo {
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: rgb(34, 34, 34);
+    text-align: center;
+}
+
+.subtitle_photo span {
+    font-size: 48px;
+    color: rgb(193, 143, 89);
+}
+
+.subtitle_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subtitle_text h3 {
+    color: whitesmoke;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.doubleLine {
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.subtitle_text p {
+    color: rgb(193, 143, 89);
+    font-size: 21px;
+    background-color: rgba(0, 0, 0, 0.712);
+    text-align: center;
+    padding: 25px;
+}
+
+.subtitle_text p span {
+    color: whitesmoke;
+    font-size: 38px;
+}
+
+/* Blog - Artigos */
+
+.generic_title {
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.blog {
+    display: flex;
+    overflow: scroll;
+    padding: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog_article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    padding: 25px;
+}
+
+
+/* Certificados */
+
+.certificados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px 25px 40px 0px;
+}
+
+.certificado {
+    margin-left: 25px;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: rgb(52, 52, 52);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 15px 50px;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer h2 {
+    color: rgb(193, 143, 89);
+    margin-bottom: 25px;
+}
+
+footer form input {
+    height: 3vh;
+    margin: 5px 0px 5px 0px;
+    background-color: rgb(18, 18, 20);
+    padding-left: 15px;
+    color: whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+footer form textarea {
+    background-color: rgb(18, 18, 20);
+    margin: 5px 0px 10px 0px;
+    padding-left: 15px;
+    padding-top: 5px;
+    color: whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+footer form button {
+    padding: 19px 50px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(193, 143, 89);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin: 5px 0px 15px 0px;
+}
+
+footer .social_container {
+    background-color: rgb(18, 18, 20);
+    padding: 35px 0px 35px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social_container a {
+    margin-left: 8px;
+}
+
+footer p {
+    color: whitesmoke;
+    margin-top: 15px;
+}

@@ -1,0 +1,28 @@
+@media (max-width: 900px)
+{
+    .home h1 {
+        font-size: 45px;
+    }
+
+    .main_logo{
+        width: 180px;
+    }
+}
+
+@media (max-width: 630px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 965px) {
+    .certificados {
+        flex-direction: column;
+    }
+    .certificado{
+        margin-top: 25px;
+    }
+}
