@@ -46,6 +46,12 @@
         justify-content: center;
         align-items: center;
     }
+
+    footer form,
+    footer .social_container{
+        max-width: 85%;
+    }
+
 }
 
 @media (max-width: 456px) {
@@ -53,5 +59,12 @@
     .blog_article img {
         width: 95%;
         opacity: 0.9;
+    }
+}
+
+@media (max-width: 550px) {
+
+    footer{
+        padding: 25px;
     }
 }
