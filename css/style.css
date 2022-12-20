@@ -20,6 +20,13 @@
     background-size: cover;
 }
 
+.introduction {
+    font-size: 35px;
+    color: rgb(193, 143, 89);
+    margin-bottom: -15px;
+    margin-left: 25px;
+}
+
 .home h1 {
     color: white;
     font-family: 'Kanit', sans-serif;
@@ -122,6 +129,13 @@
 
 /* Blog - Artigos */
 
+.title_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .generic_title {
     text-align: center;
     margin-top: 25px;
@@ -130,18 +144,37 @@
 
 .blog {
     display: flex;
-    overflow: scroll;
+    flex-direction: column;
     padding: 25px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .blog_article {
     display: flex;
-    flex-direction: column;
-    margin-left: 25px;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    border: 2px solid rgb(193, 143, 89);
+    border-radius: 8px;
     padding: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
 }
 
+.blog_article p {
+    padding: 5px;
+    text-align: justify;
+}
+
+.blog_article img {
+    border-radius: 5px;
+}
+
+.left {
+    flex-direction: row;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
 
 /* Certificados */
 
@@ -150,7 +183,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    padding: 40px 25px 40px 0px;
+    padding: 0px 25px 40px 0px;
 }
 
 .certificado {
@@ -224,7 +257,7 @@ footer .social_container {
     margin-left: 8px;
 }
 
-.social_container a img{
+.social_container a img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
